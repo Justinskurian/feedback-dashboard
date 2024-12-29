@@ -27,7 +27,7 @@ const Feedback = () => {
   const sendButton = () => {
     if (location.state != null) {
       axios
-        .put(`http://localhost:3000/edit/` + location.state.val._id, feedback)
+        .put(`https://feedback-dashboard-q45h.onrender.com/edit/` + location.state.val._id, feedback)
         .then((res) => {
           alert(res.data);
         })
@@ -36,7 +36,7 @@ const Feedback = () => {
         });
     } else {
       axios
-        .post(`http://localhost:3000/add`, feedback)
+        .post(`https://feedback-dashboard-q45h.onrender.com/add`, feedback)
         .then((res) => {
           alert(res.data);
         })

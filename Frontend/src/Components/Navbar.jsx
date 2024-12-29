@@ -13,7 +13,7 @@ const Navbar = () => {
               component="div"
               sx={{ flexGrow: 1, fontWeight: "bold", letterSpacing: "1px" }}
             >
-              Admin Panel
+              ADMIN PANEL
             </Typography>
             <Link to={"/"} style={{ color: "white", textDecoration: "none", marginRight: "16px" }}>
               <Button color="inherit" sx={{ textTransform: "uppercase", fontWeight: "bold" }}>

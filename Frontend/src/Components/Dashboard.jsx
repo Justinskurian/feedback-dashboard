@@ -9,7 +9,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/get")
+      .get("https://feedback-dashboard-q45h.onrender.com/get")
       .then((res) => {
         console.log(res);
         setFeedback(res.data);
@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   const deleteFeedback = (id) => {
     axios
-      .delete(`http://localhost:3000/delete/${id}`)
+      .delete(`https://feedback-dashboard-q45h.onrender.com/delete/${id}`)
       .then((res) => {
         console.log(res.data);
         window.location.reload();
